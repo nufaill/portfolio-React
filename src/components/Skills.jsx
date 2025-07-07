@@ -61,7 +61,6 @@ const Skills = () => {
         { name: "PostgreSQL", icon: <Database className="w-4 h-4" /> },
         { name: "JWT", icon: <Shield className="w-4 h-4" /> },
         { name: "Razorpay", icon: <Zap className="w-4 h-4" /> },
-        { name: "Stripe", icon: <Zap className="w-4 h-4" /> },
         { name: "REST APIs", icon: <Globe className="w-4 h-4" /> },
         { name: "GraphQL", icon: <Globe className="w-4 h-4" /> },
       ],
