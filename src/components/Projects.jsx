@@ -6,6 +6,7 @@ import aichat from '../assets/aichat.jpg'
 import KickStop from '../assets/kickstop.png'
 import todoapp from '../assets/todoapp.png'
 import netfliximg from '../assets/netfliximg.png'
+import fluffycare from '../assets/fluffycare.png'
 
 const Projects = () => {
   const { darkMode } = useTheme();
@@ -14,6 +15,16 @@ const Projects = () => {
   const filters = ['All', 'Web App', 'Landing Page', 'E-commerce'];
   
   const projects = [
+    {
+      id: 1,
+      title: 'FluffyCare - Pet Service Marketplace',
+      category: 'Web App',
+      description: 'FluffyCare is a pet care service marketplace designed for pet owners to connect with verified service providers like groomers, trainers, and daycares. It supports customer, shop, and admin roles, with advanced features like service booking, real-time chat, verification workflows, and role-based dashboards.',
+      image: fluffycare,
+      tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS','Cloudinary'],
+      liveLink: '#',
+      repoLink: 'https://github.com/nufaill/fluffyCare'
+    },
     {
       id: 1,
       title: 'User Management',
