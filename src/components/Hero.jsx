@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import { ArrowDown } from "lucide-react";
-import { useTheme } from '../context/ThemeContext'; // Make sure this context is correctly set up
+import { useTheme } from '../context/ThemeContext'; 
 
 const Hero = () => {
-  const { darkMode } = useTheme(); // ✅ Correctly use theme context
+  const { darkMode } = useTheme(); 
   const profileRef = useRef(null);
 
   useEffect(() => {
@@ -67,10 +67,11 @@ const Hero = () => {
                 Welcome to my portfolio!
               </p>
               <h1 className={`text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight ${darkMode ? "text-white" : "text-gray-900"}`}>
-                Hello, my name's{" "}
+                Hi, I'm{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-text">
                   NUFAIL
                 </span>.
+                MERN Stack Developer
               </h1>
             </div>
 
