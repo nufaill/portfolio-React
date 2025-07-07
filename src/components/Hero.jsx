@@ -67,12 +67,14 @@ const Hero = () => {
                 Welcome to my portfolio!
               </p>
               <h1 className={`text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight ${darkMode ? "text-white" : "text-gray-900"}`}>
-                Hi, I'm{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-text">
-                  NUFAIL
-                </span>.
-                MERN Stack Developer
-              </h1>
+  Hi, I'm{" "}
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 animate-text">
+    NUFAIL
+  </span>
+  <br />
+  <span className="block mt-2">MERN Stack Developer</span>
+</h1>
+
             </div>
 
             <div className="h-1 w-24 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mx-auto lg:mx-0" />
