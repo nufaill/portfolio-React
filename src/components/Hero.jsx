@@ -41,24 +41,6 @@ const Hero = () => {
 
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12">
-          {/* Photo Section */}
-          <div className="lg:order-2 lg:w-1/2 flex justify-center order-1 w-full md:w-2/3 mx-auto mb-12 lg:mb-0 mt-16 lg:mt-0 sm:mt-24 sm:mb-20">
-            <div
-              ref={profileRef}
-              className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden shadow-lg"
-              style={{
-                boxShadow: darkMode
-                  ? "0 0 25px rgba(14, 165, 233, 0.3), 0 0 10px rgba(14, 165, 233, 0.2)"
-                  : "0 0 25px rgba(14, 165, 233, 0.2), 0 0 10px rgba(14, 165, 233, 0.1)",
-              }}
-            >
-              <img
-                src="/img.png"
-                alt="NUFAIL"
-                className="w-full h-full object-cover object-center z-10 relative"
-              />
-            </div>
-          </div>
 
           {/* Content Section */}
           <div className="lg:order-1 lg:w-1/2 order-2 text-center lg:text-left space-y-8">
