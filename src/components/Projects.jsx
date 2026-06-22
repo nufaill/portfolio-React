@@ -6,6 +6,7 @@ import aichat from '../assets/aichat.jpg'
 import KickStop from '../assets/kickstop.png'
 import todoapp from '../assets/todoapp.png'
 import netfliximg from '../assets/netfliximg.png'
+import fluffycare from '../assets/fluffycare.png'
 
 const Projects = () => {
   const { darkMode } = useTheme();
@@ -16,6 +17,16 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: 'FluffyCare - Pet Service Marketplace',
+      category: 'E-commerce',
+      description: 'FluffyCare is a pet care service marketplace designed for pet owners to connect with verified service providers like groomers, trainers, and daycares. It supports customer, shop, and admin roles, with advanced features like service booking, real-time chat, verification workflows, and role-based dashboards.',
+      image: fluffycare,
+      tags: ['React', 'Redux', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS','Cloudinary'],
+      liveLink: 'https://fluffycare.nufail.xyz',
+      repoLink: 'https://github.com/nufaill/fluffyCare'
+    },
+    {
+      id: 2,
       title: 'User Management',
       category: 'Web App',
       description: 'This is a user management system that helps easily control and manage users.',
@@ -25,17 +36,17 @@ const Projects = () => {
       repoLink: 'https://github.com/nufaill/user-management-react'
     },
     {
-      id: 2,
+      id: 3,
       title: 'KickStop shoe Store',
       category: 'E-commerce',
       description: 'A high-end e-commerce platform for luxury shoes, featuring a seamless Razorpay payment integration and a dynamic user experience.',
       image: KickStop,
       tags: ['ejs', 'Node.js', 'MongoDB'],
-      liveLink: 'https://www.figma.com/design/ZoiWOrFninsEMcU8vOayWL/KickStop-(Copy)-(Copy)?node-id=17-3&p=f',
+      liveLink: 'https://kickstop.nufail.xyz',
       repoLink: 'https://github.com/nufaill/KickStop'
     },
     {
-      id: 3,
+      id: 4,
       title: 'AI Chatbot',
       category: 'Web App',
       description: ' AI chatbot designed to engage users with intelligent, dynamic conversations, providing real-time assistance and enhancing user experience.',
@@ -45,7 +56,7 @@ const Projects = () => {
       repoLink: 'https://github.com/nufaill/turbo-chatbot'
     },
     {
-      id: 4,
+      id: 5,
       title: 'To-Do App',
       category: 'Web App',
       description: 'A simple yet powerful To-Do app that helps users manage tasks efficiently with features like task creation, editing, and deletion, all designed with a clean and intuitive user interface.',

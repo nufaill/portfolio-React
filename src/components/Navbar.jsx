@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 const Navbar = ({ scrollY }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const { darkMode, toggleTheme } = useTheme();
 
   const menuItems = [
@@ -15,16 +14,12 @@ const Navbar = ({ scrollY }) => {
     { name: 'Contact', href: '#contact' },
   ];
 
-  useEffect(() => {
-    setIsScrolled(scrollY > 50);
-  }, [scrollY]);
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-slate-900/90 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed top-0 w-full z-50 ${darkMode ? 'text-gray-300' : 'text-gray-800'} backdrop-blur-md shadow-lg transition-colors duration-300`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -49,7 +44,7 @@ const Navbar = ({ scrollY }) => {
               ))}
               <button
                 onClick={toggleTheme}
-                className="p-2 rounded-full text-gray-400 hover:text-cyan-400 transition-colors duration-300"
+                className={`p-2 rounded-full ${darkMode ? 'text-gray-300' : 'text-gray-800'} hover:text-cyan-400 transition-colors duration-300`}
                 aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
               >
                 {darkMode ? <Sun size={20} /> : <Moon size={20} />}
